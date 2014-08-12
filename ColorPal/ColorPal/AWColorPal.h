@@ -10,4 +10,6 @@
 
 @interface AWColorPal : NSObject
 
++ (BOOL)shouldLoadPlugin;
+
 @end
