@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		217D20B8A14749ED915D6401 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5D08BF91174BB090C637C6 /* libPods.a */; };
+		2D1763351998C1240052A009 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1763341998C1240052A009 /* AppKit.framework */; };
+		2D1763371998C1240052A009 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1763361998C1240052A009 /* Foundation.framework */; };
+		2D17633D1998C1240052A009 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D17633B1998C1240052A009 /* InfoPlist.strings */; };
+		2D1763401998C1240052A009 /* AWColorPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D17633F1998C1240052A009 /* AWColorPal.m */; };
+		2D1763961998EED30052A009 /* NSColorPanel+AWColorPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1763951998EED30052A009 /* NSColorPanel+AWColorPal.m */; };
+		2DAD916B199A49F300422675 /* NSColorList+AWColorPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD916A199A49F300422675 /* NSColorList+AWColorPal.m */; };
+		2DAD9174199A4B4F00422675 /* IDEIndex+AWColorPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD916E199A4B4F00422675 /* IDEIndex+AWColorPal.m */; };
+		2DAD9175199A4B4F00422675 /* IDEWorkspace+AWColorPal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD9170199A4B4F00422675 /* IDEWorkspace+AWColorPal.m */; };
+		2DAD9176199A4B4F00422675 /* MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD9172199A4B4F00422675 /* MethodSwizzle.m */; };
+		2DAD9179199A50F300422675 /* AWColorListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD9178199A50F300422675 /* AWColorListItem.m */; };
+		2DAD917D199A566300422675 /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAD917C199A566300422675 /* IDEFoundation.framework */; };
+		2DAD917F199A567C00422675 /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAD917E199A567C00422675 /* IDEKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D1763311998C1240052A009 /* ColorPal.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPal.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1763341998C1240052A009 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2D1763361998C1240052A009 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2D17633A1998C1240052A009 /* ColorPal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorPal-Info.plist"; sourceTree = "<group>"; };
+		2D17633C1998C1240052A009 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2D17633E1998C1240052A009 /* AWColorPal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWColorPal.h; sourceTree = "<group>"; };
+		2D17633F1998C1240052A009 /* AWColorPal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWColorPal.m; sourceTree = "<group>"; };
+		2D1763411998C1240052A009 /* ColorPal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorPal-Prefix.pch"; sourceTree = "<group>"; };
+		2D1763941998EED30052A009 /* NSColorPanel+AWColorPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColorPanel+AWColorPal.h"; sourceTree = "<group>"; };
+		2D1763951998EED30052A009 /* NSColorPanel+AWColorPal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColorPanel+AWColorPal.m"; sourceTree = "<group>"; };
+		2DAD9169199A49F300422675 /* NSColorList+AWColorPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColorList+AWColorPal.h"; sourceTree = "<group>"; };
+		2DAD916A199A49F300422675 /* NSColorList+AWColorPal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColorList+AWColorPal.m"; sourceTree = "<group>"; };
+		2DAD916D199A4B4F00422675 /* IDEIndex+AWColorPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEIndex+AWColorPal.h"; sourceTree = "<group>"; };
+		2DAD916E199A4B4F00422675 /* IDEIndex+AWColorPal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEIndex+AWColorPal.m"; sourceTree = "<group>"; };
+		2DAD916F199A4B4F00422675 /* IDEWorkspace+AWColorPal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEWorkspace+AWColorPal.h"; sourceTree = "<group>"; };
+		2DAD9170199A4B4F00422675 /* IDEWorkspace+AWColorPal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEWorkspace+AWColorPal.m"; sourceTree = "<group>"; };
+		2DAD9171199A4B4F00422675 /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
+		2DAD9172199A4B4F00422675 /* MethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzle.m; sourceTree = "<group>"; };
+		2DAD9173199A4B4F00422675 /* XcodeMisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeMisc.h; sourceTree = "<group>"; };
+		2DAD9177199A50F300422675 /* AWColorListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWColorListItem.h; sourceTree = "<group>"; };
+		2DAD9178199A50F300422675 /* AWColorListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWColorListItem.m; sourceTree = "<group>"; };
+		2DAD917C199A566300422675 /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEFoundation.framework; path = ../Frameworks/IDEFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		2DAD917E199A567C00422675 /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = ../Frameworks/IDEKit.framework; sourceTree = DEVELOPER_DIR; };
+		853AC4B5C5BE4B3FB10AEE97 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DC5D08BF91174BB090C637C6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D17632E1998C1230052A009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAD917D199A566300422675 /* IDEFoundation.framework in Frameworks */,
+				2D1763351998C1240052A009 /* AppKit.framework in Frameworks */,
+				2D1763371998C1240052A009 /* Foundation.framework in Frameworks */,
+				217D20B8A14749ED915D6401 /* libPods.a in Frameworks */,
+				2DAD917F199A567C00422675 /* IDEKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D1763281998C1230052A009 = {
+			isa = PBXGroup;
+			children = (
+				2D1763381998C1240052A009 /* ColorPal */,
+				2D1763331998C1240052A009 /* Frameworks */,
+				2D1763321998C1240052A009 /* Products */,
+				853AC4B5C5BE4B3FB10AEE97 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		2D1763321998C1240052A009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D1763311998C1240052A009 /* ColorPal.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D1763331998C1240052A009 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD917E199A567C00422675 /* IDEKit.framework */,
+				2DAD917C199A566300422675 /* IDEFoundation.framework */,
+				2D1763341998C1240052A009 /* AppKit.framework */,
+				2D1763361998C1240052A009 /* Foundation.framework */,
+				DC5D08BF91174BB090C637C6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D1763381998C1240052A009 /* ColorPal */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD916C199A4B4F00422675 /* ksuther */,
+				2D17633E1998C1240052A009 /* AWColorPal.h */,
+				2D17633F1998C1240052A009 /* AWColorPal.m */,
+				2D1763941998EED30052A009 /* NSColorPanel+AWColorPal.h */,
+				2D1763951998EED30052A009 /* NSColorPanel+AWColorPal.m */,
+				2DAD9169199A49F300422675 /* NSColorList+AWColorPal.h */,
+				2DAD916A199A49F300422675 /* NSColorList+AWColorPal.m */,
+				2D1763391998C1240052A009 /* Supporting Files */,
+				2DAD9177199A50F300422675 /* AWColorListItem.h */,
+				2DAD9178199A50F300422675 /* AWColorListItem.m */,
+			);
+			path = ColorPal;
+			sourceTree = "<group>";
+		};
+		2D1763391998C1240052A009 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D17633A1998C1240052A009 /* ColorPal-Info.plist */,
+				2D17633B1998C1240052A009 /* InfoPlist.strings */,
+				2D1763411998C1240052A009 /* ColorPal-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DAD916C199A4B4F00422675 /* ksuther */ = {
+			isa = PBXGroup;
+			children = (
+				2DAD916D199A4B4F00422675 /* IDEIndex+AWColorPal.h */,
+				2DAD916E199A4B4F00422675 /* IDEIndex+AWColorPal.m */,
+				2DAD916F199A4B4F00422675 /* IDEWorkspace+AWColorPal.h */,
+				2DAD9170199A4B4F00422675 /* IDEWorkspace+AWColorPal.m */,
+				2DAD9171199A4B4F00422675 /* MethodSwizzle.h */,
+				2DAD9172199A4B4F00422675 /* MethodSwizzle.m */,
+				2DAD9173199A4B4F00422675 /* XcodeMisc.h */,
+			);
+			path = ksuther;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D1763301998C1230052A009 /* ColorPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D1763441998C1240052A009 /* Build configuration list for PBXNativeTarget "ColorPal" */;
+			buildPhases = (
+				85D2BADDE5C9496C99B2DFF9 /* Check Pods Manifest.lock */,
+				2D17632D1998C1230052A009 /* Sources */,
+				2D17632E1998C1230052A009 /* Frameworks */,
+				2D17632F1998C1230052A009 /* Resources */,
+				BDE4044107CA450F8DC636EE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorPal;
+			productName = ColorPal;
+			productReference = 2D1763311998C1240052A009 /* ColorPal.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D1763291998C1230052A009 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AW;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ashton-W";
+			};
+			buildConfigurationList = 2D17632C1998C1230052A009 /* Build configuration list for PBXProject "ColorPal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2D1763281998C1230052A009;
+			productRefGroup = 2D1763321998C1240052A009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D1763301998C1230052A009 /* ColorPal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D17632F1998C1230052A009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D17633D1998C1240052A009 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85D2BADDE5C9496C99B2DFF9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDE4044107CA450F8DC636EE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D17632D1998C1230052A009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAD9175199A4B4F00422675 /* IDEWorkspace+AWColorPal.m in Sources */,
+				2DAD9176199A4B4F00422675 /* MethodSwizzle.m in Sources */,
+				2DAD9179199A50F300422675 /* AWColorListItem.m in Sources */,
+				2D1763401998C1240052A009 /* AWColorPal.m in Sources */,
+				2DAD9174199A4B4F00422675 /* IDEIndex+AWColorPal.m in Sources */,
+				2DAD916B199A49F300422675 /* NSColorList+AWColorPal.m in Sources */,
+				2D1763961998EED30052A009 /* NSColorPanel+AWColorPal.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D17633B1998C1240052A009 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D17633C1998C1240052A009 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D1763421998C1240052A009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2D1763431998C1240052A009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2D1763451998C1240052A009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853AC4B5C5BE4B3FB10AEE97 /* Pods.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorPal/ColorPal-Prefix.pch";
+				INFOPLIST_FILE = "ColorPal/ColorPal-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		2D1763461998C1240052A009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853AC4B5C5BE4B3FB10AEE97 /* Pods.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorPal/ColorPal-Prefix.pch";
+				INFOPLIST_FILE = "ColorPal/ColorPal-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D17632C1998C1230052A009 /* Build configuration list for PBXProject "ColorPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1763421998C1240052A009 /* Debug */,
+				2D1763431998C1240052A009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D1763441998C1240052A009 /* Build configuration list for PBXNativeTarget "ColorPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1763451998C1240052A009 /* Debug */,
+				2D1763461998C1240052A009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D1763291998C1230052A009 /* Project object */;
+}
