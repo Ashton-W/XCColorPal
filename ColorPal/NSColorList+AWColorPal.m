@@ -22,10 +22,13 @@
     
     if ([json isKindOfClass:[NSDictionary class]]) {
         NSDictionary *colors = (NSDictionary*)json;
+        NSArray *colorNames = [[colors allKeys] sortedArrayUsingComparator:^NSComparisonResult(NSString *a, NSString *b) {
+            return [a caseInsensitiveCompare:b];
+        }];
         
         colorList = [[NSColorList alloc] initWithName:name];
-        [colors enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSColor *color, BOOL *stop) {
-            [colorList setColor:color forKey:key];
+        [colorNames enumerateObjectsUsingBlock:^(NSString *key, NSUInteger idx, BOOL *stop) {
+            [colorList setColor:colors[key] forKey:key];
         }];
     }
     

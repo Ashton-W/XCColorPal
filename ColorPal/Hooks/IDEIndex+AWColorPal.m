@@ -4,11 +4,12 @@
 //
 //  Created by Kent Sutherland on 1/23/13.
 //
-//  From https://github.com/ksuther/KSImageNamed-Xcode
+//  Adapted From https://github.com/ksuther/KSImageNamed-Xcode
 
 #import "IDEIndex+AWColorPal.h"
 #import "AWColorPal.h"
 #import "MethodSwizzle.h"
+#import <RSSwizzle/RSSwizzle.h>
 
 @implementation IDEIndex (AWColorPal)
 
@@ -19,7 +20,7 @@
 
 - (void)AWColorPal_close
 {
-    //[[AWColorPal sharedPlugin] removeImageCompletionsForIndex:self];
+    [[AWColorPal sharedPlugin] removeColorListsForIndex:self];
     
     [self AWColorPal_close];
 }

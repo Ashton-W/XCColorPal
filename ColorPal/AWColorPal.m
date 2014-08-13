@@ -11,7 +11,7 @@
 #import "XcodeMisc.h"
 #import "AWColorListItem.h"
 
-static AWColorPal *sharedPlugin;
+static AWColorPal *_sharedPlugin;
 
 @interface AWColorPal () {
     NSTimer *_updateTimer;
@@ -26,12 +26,17 @@ static AWColorPal *sharedPlugin;
 
 @implementation AWColorPal
 
++ (instancetype)sharedPlugin
+{
+    return _sharedPlugin;
+}
+
 + (void)pluginDidLoad:(NSBundle *)plugin
 {
     static dispatch_once_t onceToken;
     if ([self shouldLoadPlugin]) {
         dispatch_once(&onceToken, ^{
-            sharedPlugin = [[self alloc] initWithBundle:plugin];
+            _sharedPlugin = [[self alloc] initWithBundle:plugin];
         });
     }
 }

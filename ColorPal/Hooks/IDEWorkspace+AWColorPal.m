@@ -4,7 +4,7 @@
 //
 //  Created by Kent Sutherland on 1/23/13.
 //
-//  From https://github.com/ksuther/KSImageNamed-Xcode
+//  Adapted From https://github.com/ksuther/KSImageNamed-Xcode
 
 #import "IDEWorkspace+AWColorPal.h"
 #import "MethodSwizzle.h"
@@ -21,7 +21,7 @@
 {
     [self AWColorPal__updateIndexableFiles:arg1];
     
-    //[[AWColorPal sharedPlugin] indexNeedsUpdate:[self index]];
+    [[AWColorPal sharedPlugin] indexNeedsUpdate:[self index]];
 }
 
 @end

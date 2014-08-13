@@ -10,4 +10,11 @@
 
 @interface AWColorPal : NSObject
 
++ (instancetype)sharedPlugin;
+
++ (BOOL)shouldLoadPlugin;
+
+- (void)removeColorListsForIndex:(id)index;
+- (void)indexNeedsUpdate:(id)index;
+
 @end
